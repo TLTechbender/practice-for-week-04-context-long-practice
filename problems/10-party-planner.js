@@ -1,5 +1,21 @@
 // Your code here
+class PartyPlanner{
+    constructor(){
+        this.guestList =[];
+    }
 
+    addToGuestList(name){
+        this.guestList.push(name);
+    }
+    throwParty(){
+        if(this.guestList.length <1){
+           return ("Gotta add people to the guest list")
+        }else{
+         let message = "Welcome to the party ";
+            return message + this.guestList.join(" and ");
+        }
+    }
+}
 
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
